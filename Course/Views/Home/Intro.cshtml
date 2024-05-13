@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Вступ";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Вступ до ASP</h1>
+</div>
+<img class="float-start intro-img" src="/img/asp.net.png" alt="img" />
+
+<p>
+    <code>https://localhost:5567/Home/Url</code>,
+</p>
+<ul>
+    <li>
+        src="image.png" &rarr;
+        <code>https://localhost:5567/Home/image.png</code>
+    </li>
+    <li>
+        src="/image.png" &rarr;
+        <code>https://localhost:5567/image.png</code>
+        (file://C:/image.png)
+
+    </li>
+    <li>
+        src="//image.png" &rarr;
+        <code>https://image.png</code>
+
+    </li>
+    <li>
+        src="?image.png" &rarr;
+        <code>https://localhost:5567/Home/Url?image.png</code>
+    </li>
+    <li>
+        src="#image.png" &rarr;
+        <code>https://localhost:5567/Home/Url#image.png</code>
+    </li>
+    <li>
+        <strong>Тільки для ASP</strong> src="~/image.png" &rarr;
+        <code>https://localhost:5567/image.png</code>
+        https://site.com/site1/Home/URL
+        https://site.com/site2Home/URL,
+
+    </li>
+
+</ul>

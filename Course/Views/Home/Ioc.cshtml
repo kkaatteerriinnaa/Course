@@ -1,0 +1,13 @@
+﻿@model Course.Models.Home.Model.Ioc.IocPageModel
+@{
+    ViewData["Title"] = "Ioc";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Інверсія управління. Сервіси</h1>
+</div>
+<h3>@Model.Title</h3>
+@foreach(var pair in Model.Hashes)
+{
+    <p>@pair.Key -- @pair.Value</p>
+}

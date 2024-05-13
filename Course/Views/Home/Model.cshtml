@@ -1,0 +1,41 @@
+﻿@model Course.Models.Home.Model.PageModel
+
+@{
+    ViewData["Title"] = Model.TabHeader;
+}
+
+
+<div class="text-center">
+
+    <h1 class="display-4">@Model.PageTitle</h1>
+</div>
+<form method="post">
+    <div class="row">
+        <div class="col">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="user-name"><i class="bi bi-person-hearts"></i></span>
+                <input type="text" class="form-control" 
+                placeholder="Username" name="user-name"
+                aria-label="Username" aria-describedby="user-name">
+            </div>
+        </div>
+        <div class="col">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="user-email"><i class="bi bi-envelope-paper-heart-fill"></i></span>
+                <input type="text" class="form-control" 
+                placeholder="Username" name="user-email" 
+                aria-label="Email" aria-describedby="user-email">
+            </div>
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-secondary">Реєстрація</button>
+        </div>
+    </div>
+</form>
+@if (Model.FormModel?.UserName != null)
+{
+    <p>
+        Username: @Model.FormModel.UserName
+        Email: @Model.FormModel.UserEmail
+    </p>
+}

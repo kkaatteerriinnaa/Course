@@ -1,0 +1,9 @@
+﻿@model Course.Models.Home.Content.Category.ContentCategoryPageModel
+@{
+    Layout = "_ContentLayout";
+}
+<h1>Category: @Model.Category.Name</h1>
+@foreach(var location in Model.Locations)
+{
+    @Html.DisplayFor(m => location, "LocationTemplate")
+}
